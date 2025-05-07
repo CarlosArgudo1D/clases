@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Panel</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h2>¡Bienvenido al Dashboard!</h2>
+
+  <ion-list>
+    <ion-item *ngFor="let user of usuarios">
+      <ion-label>{{ user.email }}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="full" color="danger" (click)="logout()">Cerrar sesión</ion-button>
+</ion-content>
